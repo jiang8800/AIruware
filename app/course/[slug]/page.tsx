@@ -1,6 +1,30 @@
+import { getChapterBySlug, getAllChapterSlugs, getAdjacentChapters } from '@/lib/content'
+import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import { marked } from 'marked'
 
-// ... imports
+// Generate static paths for all chapters
+export async function generateStaticParams() {
+    const slugs = getAllChapterSlugs()
+    return slugs.map(slug => ({ slug }))
+}
+
+// Generate metadata for SEO
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params
+    const chapter = getChapterBySlug(slug)
+
+    if (!chapter) {
+        return {
+            title: 'Chapter Not Found'
+        }
+    }
+
+    return {
+        title: `${chapter.frontmatter.title} - ${chapter.frontmatter.titleCN}`,
+        description: chapter.frontmatter.description || chapter.frontmatter.title,
+    }
+}
 
 export default async function ChapterPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
