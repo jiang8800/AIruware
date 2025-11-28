@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import rehypeHighlight from 'rehype-highlight'
 
 // Generate static paths for all chapters
 export async function generateStaticParams() {
@@ -116,7 +115,6 @@ export default async function ChapterPage({ params }: { params: Promise<{ slug: 
                                     options={{
                                         mdxOptions: {
                                             remarkPlugins: [remarkGfm],
-                                            rehypePlugins: [rehypeHighlight],
                                         },
                                     }}
                                 />
