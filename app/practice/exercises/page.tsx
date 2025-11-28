@@ -193,8 +193,8 @@ export default function ExercisesPage() {
                     {/* Question Type Badge */}
                     <div className="flex items-center gap-3 mb-6">
                         <span className={`px-4 py-2 rounded-full text-sm font-semibold ${currentExercise.type === 'multiple-choice'
-                                ? 'bg-blue-100 text-blue-700'
-                                : 'bg-purple-100 text-purple-700'
+                            ? 'bg-blue-100 text-blue-700'
+                            : 'bg-purple-100 text-purple-700'
                             }`}>
                             {currentExercise.type === 'multiple-choice' ? '📝 多选题' : '🔗 匹配题'}
                         </span>
@@ -227,26 +227,26 @@ export default function ExercisesPage() {
                                         onClick={() => handleMultipleChoiceAnswer(option.id)}
                                         disabled={showExplanation}
                                         className={`w-full text-left p-5 rounded-xl border-2 transition-all duration-200 ${showResult
-                                                ? isCorrect
-                                                    ? 'border-green-500 bg-green-50'
-                                                    : isSelected
-                                                        ? 'border-red-500 bg-red-50'
-                                                        : 'border-gray-200 bg-gray-50'
+                                            ? isCorrect
+                                                ? 'border-green-500 bg-green-50'
                                                 : isSelected
-                                                    ? 'border-cyan-500 bg-cyan-50'
-                                                    : 'border-gray-200 hover:border-cyan-300 hover:bg-gray-50'
+                                                    ? 'border-red-500 bg-red-50'
+                                                    : 'border-gray-200 bg-gray-50'
+                                            : isSelected
+                                                ? 'border-cyan-500 bg-cyan-50'
+                                                : 'border-gray-200 hover:border-cyan-300 hover:bg-gray-50'
                                             }`}
                                     >
                                         <div className="flex items-center">
                                             <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold ${showResult
-                                                    ? isCorrect
-                                                        ? 'bg-green-500 text-white'
-                                                        : isSelected
-                                                            ? 'bg-red-500 text-white'
-                                                            : 'bg-gray-200 text-gray-600'
+                                                ? isCorrect
+                                                    ? 'bg-green-500 text-white'
                                                     : isSelected
-                                                        ? 'bg-cyan-500 text-white'
+                                                        ? 'bg-red-500 text-white'
                                                         : 'bg-gray-200 text-gray-600'
+                                                : isSelected
+                                                    ? 'bg-cyan-500 text-white'
+                                                    : 'bg-gray-200 text-gray-600'
                                                 }`}>
                                                 {option.id.toUpperCase()}
                                             </div>
@@ -278,12 +278,12 @@ export default function ExercisesPage() {
                                     <div key={pair.id} className="grid md:grid-cols-2 gap-4">
                                         {/* English Term */}
                                         <div className={`p-5 rounded-xl border-2 ${showResult
-                                                ? isCorrect
-                                                    ? 'border-green-500 bg-green-50'
-                                                    : 'border-red-500 bg-red-50'
-                                                : selectedChinese
-                                                    ? 'border-cyan-500 bg-cyan-50'
-                                                    : 'border-gray-200 bg-white'
+                                            ? isCorrect
+                                                ? 'border-green-500 bg-green-50'
+                                                : 'border-red-500 bg-red-50'
+                                            : selectedChinese
+                                                ? 'border-cyan-500 bg-cyan-50'
+                                                : 'border-gray-200 bg-white'
                                             }`}>
                                             <div className="font-bold text-lg text-gray-900 mb-1">
                                                 {pair.english}
@@ -295,18 +295,18 @@ export default function ExercisesPage() {
 
                                         {/* Chinese Options */}
                                         <div className="flex flex-wrap gap-2">
-                                            {currentExercise.pairs.map((chinesePair) => (
+                                            {currentExercise.pairs?.map((chinesePair) => (
                                                 <button
                                                     key={chinesePair.id}
                                                     onClick={() => handleMatchingAnswer(pair.id, chinesePair.id)}
                                                     disabled={showExplanation}
                                                     className={`px-4 py-2 rounded-lg border-2 transition-all ${selectedChinese === chinesePair.id
-                                                            ? showResult
-                                                                ? isCorrect
-                                                                    ? 'border-green-500 bg-green-100 text-green-700'
-                                                                    : 'border-red-500 bg-red-100 text-red-700'
-                                                                : 'border-cyan-500 bg-cyan-100 text-cyan-700'
-                                                            : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300'
+                                                        ? showResult
+                                                            ? isCorrect
+                                                                ? 'border-green-500 bg-green-100 text-green-700'
+                                                                : 'border-red-500 bg-red-100 text-red-700'
+                                                            : 'border-cyan-500 bg-cyan-100 text-cyan-700'
+                                                        : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300'
                                                         }`}
                                                 >
                                                     {chinesePair.chinese}
