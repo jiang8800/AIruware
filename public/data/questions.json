@@ -1,0 +1,245 @@
+{
+    "exercises": [
+        {
+            "id": 1,
+            "chapterId": 1,
+            "type": "multiple-choice",
+            "question": "What is the characteristic color of Ru ware glaze?",
+            "questionCN": "汝瓷釉色的特征颜色是什么？",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sky-blue (天青色)",
+                    "correct": true
+                },
+                {
+                    "id": "b",
+                    "text": "Pure white (纯白色)",
+                    "correct": false
+                },
+                {
+                    "id": "c",
+                    "text": "Deep green (深绿色)",
+                    "correct": false
+                },
+                {
+                    "id": "d",
+                    "text": "Golden yellow (金黄色)",
+                    "correct": false
+                }
+            ],
+            "explanation": "Ru ware is famous for its sky-blue celadon glaze, which resembles the clear sky after rain.",
+            "explanationCN": "汝瓷以其天青色釉而闻名，釉色如雨过天青。"
+        },
+        {
+            "id": 2,
+            "chapterId": 1,
+            "type": "multiple-choice",
+            "question": "During which dynasty was Ru ware primarily produced?",
+            "questionCN": "汝瓷主要在哪个朝代生产？",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tang Dynasty (唐朝)",
+                    "correct": false
+                },
+                {
+                    "id": "b",
+                    "text": "Song Dynasty (宋朝)",
+                    "correct": true
+                },
+                {
+                    "id": "c",
+                    "text": "Ming Dynasty (明朝)",
+                    "correct": false
+                },
+                {
+                    "id": "d",
+                    "text": "Qing Dynasty (清朝)",
+                    "correct": false
+                }
+            ],
+            "explanation": "Ru ware was one of the five famous kilns of the Song Dynasty.",
+            "explanationCN": "汝窑是宋代五大名窑之一。"
+        },
+        {
+            "id": 3,
+            "chapterId": 1,
+            "type": "matching",
+            "question": "Match the English terms with their Chinese meanings",
+            "questionCN": "将英文术语与中文含义匹配",
+            "pairs": [
+                {
+                    "id": 1,
+                    "english": "kiln",
+                    "chinese": "窑",
+                    "phonetic": "/kɪln/"
+                },
+                {
+                    "id": 2,
+                    "english": "glaze",
+                    "chinese": "釉",
+                    "phonetic": "/ɡleɪz/"
+                },
+                {
+                    "id": 3,
+                    "english": "crackle",
+                    "chinese": "开片",
+                    "phonetic": "/ˈkrækl/"
+                },
+                {
+                    "id": 4,
+                    "english": "celadon",
+                    "chinese": "青瓷",
+                    "phonetic": "/ˈselədɑːn/"
+                },
+                {
+                    "id": 5,
+                    "english": "porcelain",
+                    "chinese": "瓷器",
+                    "phonetic": "/ˈpɔːrsəlɪn/"
+                }
+            ],
+            "explanation": "These are essential vocabulary terms for discussing Ru ware ceramics.",
+            "explanationCN": "这些是讨论汝瓷时的核心词汇。"
+        },
+        {
+            "id": 4,
+            "chapterId": 2,
+            "type": "multiple-choice",
+            "question": "What creates the crackle pattern on Ru ware?",
+            "questionCN": "汝瓷上的开片纹理是如何形成的？",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Manual carving (手工雕刻)",
+                    "correct": false
+                },
+                {
+                    "id": "b",
+                    "text": "Different expansion rates of glaze and body (釉与胎体膨胀率不同)",
+                    "correct": true
+                },
+                {
+                    "id": "c",
+                    "text": "Chemical reaction (化学反应)",
+                    "correct": false
+                },
+                {
+                    "id": "d",
+                    "text": "Natural aging (自然老化)",
+                    "correct": false
+                }
+            ],
+            "explanation": "The crackle pattern forms due to different thermal expansion rates between the glaze and the ceramic body.",
+            "explanationCN": "开片纹理是由于釉和陶瓷胎体的热膨胀率不同而形成的。"
+        },
+        {
+            "id": 5,
+            "chapterId": 2,
+            "type": "matching",
+            "question": "Match the glaze characteristics with their descriptions",
+            "questionCN": "将釉色特征与其描述匹配",
+            "pairs": [
+                {
+                    "id": 1,
+                    "english": "sky-blue",
+                    "chinese": "天青色",
+                    "phonetic": ""
+                },
+                {
+                    "id": 2,
+                    "english": "jade-like",
+                    "chinese": "如玉般温润",
+                    "phonetic": ""
+                },
+                {
+                    "id": 3,
+                    "english": "translucent",
+                    "chinese": "半透明",
+                    "phonetic": "/trænsˈluːsnt/"
+                },
+                {
+                    "id": 4,
+                    "english": "lustrous",
+                    "chinese": "有光泽的",
+                    "phonetic": "/ˈlʌstrəs/"
+                }
+            ],
+            "explanation": "These terms describe the unique aesthetic qualities of Ru ware glaze.",
+            "explanationCN": "这些术语描述了汝瓷釉色的独特美学品质。"
+        },
+        {
+            "id": 6,
+            "chapterId": 3,
+            "type": "multiple-choice",
+            "question": "What is the primary clay material used in Ru ware production?",
+            "questionCN": "汝瓷生产中使用的主要粘土材料是什么？",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Kaolin clay (高岭土)",
+                    "correct": true
+                },
+                {
+                    "id": "b",
+                    "text": "Red clay (红土)",
+                    "correct": false
+                },
+                {
+                    "id": "c",
+                    "text": "Black clay (黑土)",
+                    "correct": false
+                },
+                {
+                    "id": "d",
+                    "text": "Yellow clay (黄土)",
+                    "correct": false
+                }
+            ],
+            "explanation": "Kaolin clay is the primary material used for making high-quality porcelain including Ru ware.",
+            "explanationCN": "高岭土是制作包括汝瓷在内的高品质瓷器的主要材料。"
+        },
+        {
+            "id": 7,
+            "chapterId": 3,
+            "type": "matching",
+            "question": "Match the craftsmanship terms with their meanings",
+            "questionCN": "将工艺术语与其含义匹配",
+            "pairs": [
+                {
+                    "id": 1,
+                    "english": "throwing",
+                    "chinese": "拉坯",
+                    "phonetic": "/ˈθroʊɪŋ/"
+                },
+                {
+                    "id": 2,
+                    "english": "trimming",
+                    "chinese": "修坯",
+                    "phonetic": "/ˈtrɪmɪŋ/"
+                },
+                {
+                    "id": 3,
+                    "english": "glazing",
+                    "chinese": "施釉",
+                    "phonetic": "/ˈɡleɪzɪŋ/"
+                },
+                {
+                    "id": 4,
+                    "english": "firing",
+                    "chinese": "烧制",
+                    "phonetic": "/ˈfaɪərɪŋ/"
+                },
+                {
+                    "id": 5,
+                    "english": "wedging",
+                    "chinese": "练泥",
+                    "phonetic": "/ˈwedʒɪŋ/"
+                }
+            ],
+            "explanation": "These are the key steps in the traditional ceramic production process.",
+            "explanationCN": "这些是传统陶瓷生产过程中的关键步骤。"
+        }
+    ]
+}
