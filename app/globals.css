@@ -6,12 +6,13 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
   }
 
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-gradient-to-br from-blue-50 via-white to-purple-50 text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
