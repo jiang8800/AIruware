@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, use } from 'react'
 import Link from 'next/link'
 
 interface Chapter {
@@ -16,7 +16,8 @@ interface Chapter {
     parts: string[]
 }
 
-export default function CourseDetailPage({ params }: { params: { id: string } }) {
+export default function CourseDetailPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = use(params)
     const [chapter, setChapter] = useState<Chapter | null>(null)
     const [loading, setLoading] = useState(true)
     const [activeTab, setActiveTab] = useState('overview')
@@ -26,7 +27,7 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
         fetch('/data/chapters.json')
             .then(response => response.json())
             .then(data => {
-                const foundChapter = data.chapters.find((ch: Chapter) => ch.id === parseInt(params.id))
+                const foundChapter = data.chapters.find((ch: Chapter) => ch.id === parseInt(id))
                 setChapter(foundChapter || null)
                 setLoading(false)
             })
@@ -34,7 +35,7 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
                 console.error('Error loading chapter:', error)
                 setLoading(false)
             })
-    }, [params.id])
+    }, [id])
 
     if (loading) {
         return (
