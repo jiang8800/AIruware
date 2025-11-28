@@ -11,7 +11,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ slug: 
     }
 
     const { frontmatter, content } = chapter
-    const htmlContent = marked(content)
+    const htmlContent = await marked.parse(content)
     const { prev, next } = getAdjacentChapters(frontmatter.chapter)
 
     const levelColors = {
