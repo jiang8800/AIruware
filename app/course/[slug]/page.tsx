@@ -1,29 +1,6 @@
-import { getChapterBySlug, getAllChapterSlugs, getAdjacentChapters } from '@/lib/content'
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import { marked } from 'marked'
 
-// Generate static paths for all chapters
-export async function generateStaticParams() {
-    const slugs = getAllChapterSlugs()
-    return slugs.map(slug => ({ slug }))
-}
-
-// Generate metadata for SEO
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params
-    const chapter = getChapterBySlug(slug)
-
-    if (!chapter) {
-        return {
-            title: 'Chapter Not Found'
-        }
-    }
-
-    return {
-        title: `${chapter.frontmatter.title} - ${chapter.frontmatter.titleCN}`,
-        description: chapter.frontmatter.description || chapter.frontmatter.title,
-    }
-}
+// ... imports
 
 export default async function ChapterPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
@@ -34,6 +11,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ slug: 
     }
 
     const { frontmatter, content } = chapter
+    const htmlContent = marked(content)
     const { prev, next } = getAdjacentChapters(frontmatter.chapter)
 
     const levelColors = {
@@ -108,7 +86,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ slug: 
                     <article className="lg:col-span-3">
                         <div className="card p-8 lg:p-12">
                             <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-cyan-600 prose-strong:text-gray-900 prose-code:text-cyan-600 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-table:text-sm prose-th:bg-gray-100 prose-img:rounded-xl prose-img:shadow-lg">
-                                <div dangerouslySetInnerHTML={{ __html: content }} />
+                                <div dangerouslySetInnerHTML={{ __html: htmlContent as string }} />
                             </div>
                         </div>
 
