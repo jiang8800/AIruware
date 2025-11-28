@@ -130,8 +130,8 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
                         <button
                             onClick={() => setActiveTab('overview')}
                             className={`flex-1 px-6 py-4 font-semibold transition-colors ${activeTab === 'overview'
-                                    ? 'bg-cyan-50 text-cyan-700 border-b-2 border-cyan-600'
-                                    : 'text-gray-600 hover:bg-gray-50'
+                                ? 'bg-cyan-50 text-cyan-700 border-b-2 border-cyan-600'
+                                : 'text-gray-600 hover:bg-gray-50'
                                 }`}
                         >
                             课程概览
@@ -139,8 +139,8 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
                         <button
                             onClick={() => setActiveTab('content')}
                             className={`flex-1 px-6 py-4 font-semibold transition-colors ${activeTab === 'content'
-                                    ? 'bg-cyan-50 text-cyan-700 border-b-2 border-cyan-600'
-                                    : 'text-gray-600 hover:bg-gray-50'
+                                ? 'bg-cyan-50 text-cyan-700 border-b-2 border-cyan-600'
+                                : 'text-gray-600 hover:bg-gray-50'
                                 }`}
                         >
                             课程内容
@@ -148,8 +148,8 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
                         <button
                             onClick={() => setActiveTab('culture')}
                             className={`flex-1 px-6 py-4 font-semibold transition-colors ${activeTab === 'culture'
-                                    ? 'bg-cyan-50 text-cyan-700 border-b-2 border-cyan-600'
-                                    : 'text-gray-600 hover:bg-gray-50'
+                                ? 'bg-cyan-50 text-cyan-700 border-b-2 border-cyan-600'
+                                : 'text-gray-600 hover:bg-gray-50'
                                 }`}
                         >
                             文化背景
@@ -327,11 +327,11 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
                                     <div className="prose prose-lg max-w-none">
                                         <p className="text-gray-700 leading-relaxed mb-4">
                                             汝窑位于今河南省宝丰县，是北宋时期专为宫廷烧制瓷器的官窑。汝窑瓷器以其独特的天青釉色、
-                                            精湛的制作工艺和稀少的传世量而闻名于世，被誉为"青瓷之冠"。
+                                            精湛的制作工艺和稀少的传世量而闻名于世，被誉为“青瓷之冠”。
                                         </p>
                                         <p className="text-gray-700 leading-relaxed mb-4">
                                             汝窑的釉色如雨过天青，温润如玉，开片纹理自然优美。这种独特的美学特征体现了宋代文人追求
-                                            "清雅"、"含蓄"的审美理想，对后世陶瓷艺术产生了深远影响。
+                                            “清雅”、“含蓄”的审美理想，对后世陶瓷艺术产生了深远影响。
                                         </p>
                                     </div>
                                 </div>
