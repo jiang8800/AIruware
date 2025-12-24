@@ -2,6 +2,7 @@
     "chapters": [
         {
             "id": 1,
+            "slug": "unit-1-introduction-to-ru-ware",
             "title": "Introduction to Ru Ware",
             "titleCN": "汝瓷简介",
             "description": "探索汝瓷的起源与基础知识，了解这一中国传统瓷器的历史背景",
@@ -24,6 +25,7 @@
         },
         {
             "id": 2,
+            "slug": "unit-2-the-art-of-ru-ware-glaze",
             "title": "The Art of Ru Ware Glaze",
             "titleCN": "汝瓷釉色艺术",
             "description": "深入了解汝瓷釉色的艺术特点，学习天青色的独特魅力",
@@ -47,6 +49,7 @@
         },
         {
             "id": 3,
+            "slug": "unit-3-ru-ware-craftsmanship",
             "title": "Ru Ware Craftsmanship",
             "titleCN": "汝瓷工艺",
             "description": "学习汝瓷的精湛工艺，掌握传统制瓷技术的英文表达",
@@ -70,6 +73,7 @@
         },
         {
             "id": 4,
+            "slug": "unit-4-ru-ware-forms-and-decoration",
             "title": "Ru Ware Forms and Decoration",
             "titleCN": "汝瓷造型与装饰",
             "description": "探索汝瓷的造型与装饰艺术，了解器型设计的美学原则",
@@ -93,6 +97,7 @@
         },
         {
             "id": 5,
+            "slug": "unit-5-ru-ware-design-and-innovation",
             "title": "Ru Ware Design and Innovation",
             "titleCN": "汝瓷设计与创新",
             "description": "汝瓷设计与创新发展，探讨传统与现代的融合",
@@ -116,6 +121,7 @@
         },
         {
             "id": 6,
+            "slug": "unit-6-ru-ware-manufacturing-and-smart-production",
             "title": "Ru Ware Manufacturing and Smart Production",
             "titleCN": "汝瓷制造与智能生产",
             "description": "现代汝瓷制造与智能生产技术，学习工业4.0相关词汇",
@@ -139,6 +145,7 @@
         },
         {
             "id": 7,
+            "slug": "unit-7-marketing-and-international-trade-of-ru-ware",
             "title": "Marketing and International Trade of Ru Ware",
             "titleCN": "汝瓷市场营销与国际贸易",
             "description": "汝瓷的市场营销与国际贸易，掌握商务英语表达",
@@ -162,6 +169,7 @@
         },
         {
             "id": 8,
+            "slug": "unit-8-appreciation-and-collection-of-ru-ware",
             "title": "Appreciation and Collection of Ru Ware",
             "titleCN": "汝瓷鉴赏与收藏",
             "description": "汝瓷鉴赏与收藏知识，学习艺术品评价的专业术语",
@@ -185,6 +193,7 @@
         },
         {
             "id": 9,
+            "slug": "unit-9-ru-ware-culture-and-cross-cultural-communication",
             "title": "Ru Ware Culture and Cross-Cultural Communication",
             "titleCN": "汝瓷文化与跨文化交流",
             "description": "汝瓷文化与跨文化交流，提升文化传播能力",
@@ -208,6 +217,7 @@
         },
         {
             "id": 10,
+            "slug": "unit-10-ru-ware-restoration-and-conservation",
             "title": "Ru Ware Restoration and Conservation",
             "titleCN": "汝瓷修复与保护",
             "description": "汝瓷修复与保护技术，了解文物保护的专业知识",

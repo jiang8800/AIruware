@@ -2,9 +2,11 @@
 
 import { useState, useEffect, use } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 interface Chapter {
     id: number
+    slug: string
     title: string
     titleCN: string
     description: string
@@ -18,6 +20,7 @@ interface Chapter {
 
 export default function CourseDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params)
+    const router = useRouter()
     const [chapter, setChapter] = useState<Chapter | null>(null)
     const [loading, setLoading] = useState(true)
     const [activeTab, setActiveTab] = useState('overview')
@@ -28,14 +31,20 @@ export default function CourseDetailPage({ params }: { params: Promise<{ id: str
             .then(response => response.json())
             .then(data => {
                 const foundChapter = data.chapters.find((ch: Chapter) => ch.id === parseInt(id))
-                setChapter(foundChapter || null)
-                setLoading(false)
+                if (foundChapter && foundChapter.slug) {
+                    // Redirect to the markdown-based course page
+                    router.replace(`/course/${foundChapter.slug}`)
+                } else {
+                    setChapter(foundChapter || null)
+                    setLoading(false)
+                }
             })
             .catch(error => {
                 console.error('Error loading chapter:', error)
                 setLoading(false)
             })
-    }, [id])
+    }, [id, router])
+
 
     if (loading) {
         return (

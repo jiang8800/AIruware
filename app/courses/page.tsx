@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 interface Chapter {
     id: number
+    slug: string
     title: string
     titleCN: string
     description: string
@@ -120,8 +121,8 @@ export default function CoursesPage() {
                                     key={level}
                                     onClick={() => setSelectedLevel(level)}
                                     className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${selectedLevel === level
-                                            ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-lg transform scale-105'
-                                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                        ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-lg transform scale-105'
+                                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                         }`}
                                 >
                                     {level}
@@ -221,7 +222,7 @@ export default function CoursesPage() {
 
                                     {/* Action Button */}
                                     <Link
-                                        href={`/courses/${chapter.id}`}
+                                        href={`/course/${chapter.slug}`}
                                         className={`block w-full text-center bg-gradient-to-r ${chapter.color} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200`}
                                     >
                                         开始学习
