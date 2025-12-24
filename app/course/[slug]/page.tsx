@@ -55,7 +55,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ slug: 
                         首页
                     </Link>
                     <span className="text-gray-400">/</span>
-                    <Link href="/course" className="text-gray-500 hover:text-cyan-600 transition-colors">
+                    <Link href="/courses" className="text-gray-500 hover:text-cyan-600 transition-colors">
                         课程目录
                     </Link>
                     <span className="text-gray-400">/</span>
